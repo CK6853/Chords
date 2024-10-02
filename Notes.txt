@@ -46,6 +46,7 @@ Front-end
             Per-song and all songs at once
 
 Import tool for old songs? (Only for me)
+    Or just force myself to redo them with the new features
 
 Secure - logins? Or just a password?
     Song edit tool
