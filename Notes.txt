@@ -1,0 +1,76 @@
+
+Decide on frameworks
+    Can do React/Express... or try something new? 
+    Learn something new for CSS
+
+General Dev
+    Set up branches/auto-deploy hooks
+    May have to split repos for client/server - not difficult, worry about that later
+
+Overall Data structure
+    Individual songs
+        Single entry per song, but save variants within song (e.g. just chorus)
+        Integrate a YouTube/Spotify link to the original for practice (and also save original key)
+        Recommended capo/key for guitarists
+        Keychanges within songs
+        Specific format for comments/notes - and ability to be instrument-specific
+            Notes may need inline chords (e.g. referring to "the last C of the line") that change with key
+        Better-formatted chords
+            Allow things like brackets, alternates
+    Songlists
+        Save a date, to filter out past lists
+        Each song has base song, key, and variant
+        Add notes between songs - e.g. set breaks
+
+Song format
+    See if there's something standard, rather than my homebrew from last time
+    Ability to have per-instrument comments/notes/segments
+
+Back-end/API
+    Backup/restore functionality
+    Don't put DB on repo - copyright issues
+
+Front-end
+    Re-design song-to-HTML process
+        Make sure classes are distinct for CSS
+        Cells with chords need padding - cells without do not
+        Mid-word chords without adding unneeded whitespace
+    Display songs as one-after-the-other, rather than separate tabs
+        How to do per-song settings? 
+    Still have the ability to skip to next/previous
+    Maybe still show "progress" as tabs (and click to jump to) for navigatability? 
+    Buttons to skip to sections within current song
+    Integrate capo shift
+    Settings
+        Buttons for original key and songlist key
+            Per-song and all songs at once
+
+Import tool for old songs? (Only for me)
+
+Secure - logins? Or just a password?
+    Song edit tool
+        Work in different keys
+        Eventually accessible from main interface - needs to be available on the fly
+    List edit tool
+        Filters for songs
+
+User-specific settings
+    Use browser localstorage? 
+    Instrument
+        Use capo
+    Numbers vs chords
+    Show/hide lyrics
+    Show/hide notes
+    Show/hide chords (for singers...?)
+    Style for transition/optional chords
+    Whether to display repeated sections, or just have each once
+    Sharp/flat display (e.g. Always sharps, always flats, based on key)
+
+Advanced functionality
+    Front-end scrolling synch (optional)
+        Per-heading would be simpler, but may not work for large sections/small devices
+        No matter what may have to reduce scroll rate based on smallest screen
+
+Styling
+    Dark mode? At least design with it in mind
+    Avoid floating elements - those were painful
